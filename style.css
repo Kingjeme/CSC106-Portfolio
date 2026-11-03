@@ -1,0 +1,143 @@
+
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5f93d8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4c542;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #0d0d0e;
+}
+
+.video-section {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.skills-table {
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.skills-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.skills-table th,
+.skills-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.skills-table th {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+.skills-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Mobile Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .profile-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .video-section video {
+        width: 100%;
+        height: auto;
+    }
+
+    .skills-table {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .skills-table table {
+        width: 100%;
+    }
+
+}
